@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Browser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <div class="bg" id="bg"></div>
+      <div class="shade"></div>
+
+      <div class="container">
+        <div class="topbar">
+          <div class="badge"><span>New</span> Movie</div>
+          <label class="search-wrap">
+            <span class="search-icon">⌕</span>
+            <input id="searchInput" type="text" placeholder="Search..." />
+          </label>
+        </div>
+
+        <section class="hero">
+          <div class="movie-panel">
+            <div class="loading" id="state">Loading...</div>
+            <h1 class="movie-title" id="title">-</h1>
+            <div class="meta" id="meta"></div>
+            <p class="description" id="description">Movie description here.</p>
+          </div>
+
+          <div class="carousel-wrap">
+            <div class="controls">
+              <button class="ctrl" id="prevBtn" aria-label="Scroll left">
+                ‹
+              </button>
+              <button class="ctrl" id="nextBtn" aria-label="Scroll right">
+                ›
+              </button>
+            </div>
+            <div class="movies" id="movies"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
